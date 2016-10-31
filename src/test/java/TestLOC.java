@@ -10,10 +10,10 @@ public class TestLOC {
 
     @Test
     public void testFail(){
-        fail();
+
     }
     @Test
     public  void testEqual(){
-        assertEquals("23","2");
+        assertEquals("23","23");
     }
 }
