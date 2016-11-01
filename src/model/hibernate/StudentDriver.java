@@ -1,8 +1,7 @@
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 public class StudentDriver {
 
@@ -11,7 +10,7 @@ public class StudentDriver {
 		Student students = new Student(4, "S213213c", 130);
 		Configuration cfg = new Configuration();
 
-		SessionFactory sFactory = cfg.configure().buildSessionFactory();
+		SessionFactory sFactory = cfg.configure("/Users/SilverNarcissus/Documents/Tools/TestDemo/src/model").buildSessionFactory();
 		Session session = sFactory.openSession();
 		session.beginTransaction();
 		session.delete(students);
