@@ -1,11 +1,29 @@
 <?xml version="1.0"?> 
-<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+<!DOCTYPE hibernate-mapping PUBLIC "-http://www.hibernate.org/dtd/hibernate-mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated 2014-4-30 15:39:33 by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping> 
-  <class name="model.Student"> 
-    <id name="id"> </id> 
-    <property name="name"/> 
+  <class name="hibernate.Student">
+    <id name="id"> </id>
+    <!--<property name="name" not-null="true" length="5">-->
+      <!--<type name="org.hibernate.type.StringRepresentableType">-->
+        <!--<param name="enumClass">hibernate.Name</param>-->
+        <!--&lt;!&ndash;-->
+         <!--12为java.sql.Types.VARCHAR常量值，即保存枚举的字面值到数据库。如果不指定type参数，保存枚举的索引值(从0开始)到数据库-->
+        <!--&ndash;&gt;-->
+        <!--<param name="type">12</param>-->
+      <!--</type>-->
+    <!--</property>-->
+      <property name="name"/>
+      <!--<property name="name" not-null="true" length="5">-->
+      <!--<type name="org.hibernate.type.StringType">-->
+      <!--<param name="INSTANCE">hibernate.NameC.toString</param>-->
+      <!--&lt;!&ndash;-->
+      <!--12为java.sql.Types.VARCHAR常量值，即保存枚举的字面值到数据库。如果不指定type参数，保存枚举的索引值(从0开始)到数据库-->
+      <!--&ndash;&gt;-->
+      <!--<param name="type">12</param>-->
+      <!--</type>-->
+      <!--</property>-->
     <property name="age"/> 
   </class> 
 </hibernate-mapping> 
