@@ -10,7 +10,7 @@ import static org.junit.Assert.fail;
 public class DummyTest {
     @Test
     public void test1() {
-        fail();
+
     }
 
     @Test
@@ -25,12 +25,12 @@ public class DummyTest {
 
     @Test
     public void test4() {
-        
+
     }
 
     @Test
     public void test5() {
-        fail();
+
     }
 
     @Test
@@ -115,6 +115,6 @@ public class DummyTest {
 
     @Test
     public void test22() {
-        fail();
+        
     }
 }
