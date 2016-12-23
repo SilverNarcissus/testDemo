@@ -15,17 +15,17 @@ public class DummyTest {
 
     @Test
     public void test2() {
-        fail();
+
     }
 
     @Test
     public void test3() {
-        fail();
+
     }
 
     @Test
     public void test4() {
-        fail();
+        
     }
 
     @Test
@@ -75,7 +75,7 @@ public class DummyTest {
 
     @Test
     public void test14() {
-        fail();
+
     }
 
     @Test
@@ -100,7 +100,7 @@ public class DummyTest {
 
     @Test
     public void test19() {
-        fail();
+
     }
 
     @Test
@@ -110,7 +110,7 @@ public class DummyTest {
 
     @Test
     public void test21() {
-        fail();
+
     }
 
     @Test
