@@ -1,4 +1,4 @@
-package ObjectMethodOverriding;
+package myUtil;
 
 import org.junit.Test;
 
