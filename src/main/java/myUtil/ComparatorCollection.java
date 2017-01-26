@@ -4,6 +4,7 @@ import java.util.Comparator;
 
 /**
  * Created by SilverNarcissus on 2017/1/12.
+ *
  */
 public class ComparatorCollection {
     private static class StringComparator implements Comparator<String>{

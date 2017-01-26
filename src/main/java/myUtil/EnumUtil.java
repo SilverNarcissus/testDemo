@@ -1,5 +1,6 @@
 package myUtil;
 
+import java.util.EnumSet;
 import java.util.HashMap;
 
 /**

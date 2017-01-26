@@ -13,6 +13,7 @@ public class TestClass {
         this.x = x;
     }
 
+
     public static void main(String[] args) {
         List<TestClass> s = Collections.nCopies(5, new TestClass(5));
         s.get(2).x=10;
