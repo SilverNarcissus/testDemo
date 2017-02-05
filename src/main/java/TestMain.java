@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 /**
  * Created by SilverNarcissus on 16/10/31.
@@ -6,6 +8,12 @@ import java.util.Calendar;
 public class TestMain {
     private int a;
     private String s;
+
+    public static void main(String[] args) {
+        TestMain testMain = new TestMain();
+        char[] chars = {'1'};
+        testMain.f(chars);
+    }
 
     public int getA() {
         return a;
@@ -23,23 +31,18 @@ public class TestMain {
         this.s = s;
     }
 
-    public static void main(String[] args){
-        System.out.println("!!!");
-        System.out.println("!!!");
-        System.out.println("!!!");
-        System.out.println("!!!");
-        for(int i=1;i<10;i++){
-            System.out.println("23");
-        }
-    }
-    public void say(){
+    public void say() {
         //more code
         sayI();
     }
 
     private void sayI() {
-        int i=10;
+        int i = 10;
         System.out.println(i);
     }
 
+    private void f(Object o) {
+        GregorianCalendar calendar=new GregorianCalendar();
+        System.out.println(calendar);
+    }
 }

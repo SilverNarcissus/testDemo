@@ -4,7 +4,7 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Created by SilverNarcissus on 2016/12/6.
@@ -14,9 +14,9 @@ public class TypicalValueClass implements Cloneable {
     private String name;
     private int age;
     private double salary;
-    private ArrayList<String> childNames;
+    private List<String> childNames;
 
-    public TypicalValueClass(String name, int age, double salary, ArrayList<String> childNames) {
+    public TypicalValueClass(String name, int age, double salary, List<String> childNames) {
         this.name = name;
         this.age = age;
         this.salary = salary;
@@ -47,7 +47,7 @@ public class TypicalValueClass implements Cloneable {
         this.salary = salary;
     }
 
-    public ArrayList<String> getChildNames() {
+    public List<String> getChildNames() {
         return childNames;
     }
 
@@ -104,25 +104,30 @@ public class TypicalValueClass implements Cloneable {
 
         return result.substring(0,result.length()-1);
     }
-
-    public String print(){
+    public String print() {
         String lineSeparator = System.getProperty("line.separator", "\n");
 
-        String result = "----------" + this.getClass().getName() + "----------" + lineSeparator;
+        StringBuilder result = new StringBuilder();
+        result.append("----------")
+                .append(this.getClass().getName())
+                .append("----------")
+                .append(lineSeparator);
+        //
         for (Field field : this.getClass().getDeclaredFields()) {
             try {
+                result.append(field.getName());
                 if (field.get(this) == null) {
-                    result += field.getName() + ": null" + "    ";
+                    result.append(": null    ");
                 } else {
-                    result += field.getName() + ": " + field.get(this).toString() + "    ";
+                    result.append(": ").append(field.get(this).toString()).append("    ");
                 }
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
         }
-        result += lineSeparator + "--------------------" + lineSeparator;
+        result.append(lineSeparator).append("--------------------").append(lineSeparator);
 
-        return result;
+        return result.toString();
     }
 
     /**
@@ -134,7 +139,7 @@ public class TypicalValueClass implements Cloneable {
         TypicalValueClass result = null;
         try {
             result = (TypicalValueClass) super.clone();
-            result.childNames=(ArrayList<String>) childNames.clone();
+            result.childNames=new ArrayList<String>(childNames);
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }

@@ -23,6 +23,13 @@ public class TwoD_MapTest {
     }
 
     @Test
+    public void get3() throws Exception {
+        TwoD_Map<String, Integer> twoD_map = new TwoD_Map<String, Integer>();
+        twoD_map.put("s1", "s2", 1);
+        assertEquals(twoD_map.get("s2", "s"), null);
+    }
+
+    @Test
     public void remove1() throws Exception {
         TwoD_Map<String, Integer> twoD_map = new TwoD_Map<String, Integer>();
         twoD_map.put("s1", "s2", 1);
@@ -36,6 +43,20 @@ public class TwoD_MapTest {
         twoD_map.put("s1", "s2", 1);
         twoD_map.remove("s1", "s");
         assertEquals(twoD_map.get("s1", "s2").intValue(), 1);
+    }
+
+    @Test
+    public void remove3() throws Exception {
+        TwoD_Map<String, Integer> twoD_map = new TwoD_Map<String, Integer>();
+        twoD_map.put("s1", "s2", 1);
+        assertEquals(twoD_map.remove("s1", "s2").intValue(), 1);
+    }
+
+    @Test
+    public void remove4() throws Exception {
+        TwoD_Map<String, Integer> twoD_map = new TwoD_Map<String, Integer>();
+        twoD_map.put("s1", "s2", 1);
+        assertEquals(twoD_map.remove("s2", "s2"), null);
     }
 
     @Test
@@ -161,6 +182,16 @@ public class TwoD_MapTest {
     }
 
     @Test
+    public void removeElementsByFirstKey3() {
+        TwoD_Map<String, Integer> twoD_map = new TwoD_Map<String, Integer>();
+        twoD_map.put("s1", "s2", 1);
+        twoD_map.put("s1", "s3", 1);
+        twoD_map.put("s2", "s4", 3);
+        assertEquals(null,twoD_map.removeElementsByFirstKey("s3"));
+        assertEquals(twoD_map.elementSizeBySecondKey("s2"), 1);
+    }
+
+    @Test
     public void removeElementsBySecondKey1() {
         TwoD_Map<String, Integer> twoD_map = new TwoD_Map<String, Integer>();
         twoD_map.put("s1", "s2", 10);
@@ -183,6 +214,17 @@ public class TwoD_MapTest {
 
         assertEquals(1, twoD_map.elementSizeByFirstKey("s2"));
     }
+
+    @Test
+    public void removeElementsBySecondKey3() {
+        TwoD_Map<String, Integer> twoD_map = new TwoD_Map<String, Integer>();
+        twoD_map.put("s2", "s2", 1);
+        twoD_map.put("s3", "s2", 1);
+        twoD_map.put("s2", "s4", 3);
+        assertEquals(null,twoD_map.removeElementsBySecondKey("s3"));
+        assertEquals(2, twoD_map.elementSizeByFirstKey("s2"));
+    }
+
 
     @Test
     public void clean1() {

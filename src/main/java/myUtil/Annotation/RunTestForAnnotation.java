@@ -1,10 +1,13 @@
 package myUtil.Annotation;
 
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.*;
 
 /**
  * Created by SilverNarcissus on 2017/1/26.
+ * version 1.0 on2017/1/26.
  */
 public class RunTestForAnnotation {
     public static void main(String[] args) {
@@ -30,7 +33,6 @@ public class RunTestForAnnotation {
 
     @TestAnnotation
     void f1(){
-
     }
 
     @TestAnnotation
