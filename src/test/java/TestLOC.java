@@ -9,11 +9,35 @@ import static org.junit.Assert.fail;
 public class TestLOC {
 
     @Test
-    public void testFail(){
+    public void testFail() {
 
     }
+
     @Test
-    public  void testEqual(){
-        assertEquals("23","23");
+    public void testEqual() {
+        assertEquals("23", "23");
+    }
+
+    @Test
+    public void testMul() {
+        long x = 1;
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            x = x * 2;
+        }
+        System.out.println(x);
+    }
+
+    @Test
+    public void testMove() {
+        long x = 1;
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            x = x << 2;
+        }
+        System.out.println(x);
+    }
+
+    @Test
+    public void testPrintNano(){
+        System.out.println(System.nanoTime()/1000);
     }
 }

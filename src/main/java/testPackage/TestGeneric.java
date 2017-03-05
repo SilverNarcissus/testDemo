@@ -17,20 +17,20 @@ public class TestGeneric<E> {
     public static void main(String[] args) {
         TestGeneric<String> stringTestGeneric = new TestGeneric<String>();
         stringTestGeneric.in("123");
-        ArrayList<String> strings = new ArrayList<String>();
-        strings.add("123");
-        stringTestGeneric.printFirst(strings);
+//        ArrayList<String> strings = new ArrayList<String>();
+//        strings.add("123");
+//        stringTestGeneric.printFirst(strings);
     }
 
     private void in(E e) {
         element[0] = e;
+        E e1=element[0];
+        System.out.println(e1.getClass().getSimpleName());
     }
 
     private E out() {
         return element[0];
     }
-
-    private native char test();
 
     private <T> void printFirst(List<T> list) {
         if (list.size() != 0) {

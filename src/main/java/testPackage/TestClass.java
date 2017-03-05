@@ -15,11 +15,10 @@ public class TestClass {
 
 
     public static void main(String[] args) {
-        List<TestClass> s = Collections.nCopies(5, new TestClass(5));
-        s.get(2).x=10;
-        for(TestClass t:s){
-            System.out.println(t.x);
-        }
+        System.out.println("Start");
+        TestLazyInitialize testLazyInitialize=new TestLazyInitialize();
+        System.out.println("GetField");
+        TestLazyInitialize.getField();
     }
 
 }
