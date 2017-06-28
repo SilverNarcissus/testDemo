@@ -2,12 +2,10 @@ package com.silver.narcissus.forProject;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 /**
  * Created by SilverNarcissus on 2017/3/2.
@@ -387,6 +385,7 @@ public class SelectAndTrim implements DataHelper{
     public void close() {
         closeFiles();
         fileHandler.close();
+        //Arrays.stream(logger.getHandlers()).forEach(Handler::close);
     }
 
     public Iterator<ReviewPO> findReviewsByUserId(String userId) {

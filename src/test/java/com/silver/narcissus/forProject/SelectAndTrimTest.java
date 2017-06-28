@@ -28,7 +28,12 @@ public class SelectAndTrimTest {
     }
 
     @Test
-    public void find3(){
+    public void find3() {
         selectAndTrim.findReviewsByUserId("A1S749MYKSGHQE");
+    }
+
+    @Test
+    public void te() {
+        System.out.println(Thread.activeCount());
     }
 }
