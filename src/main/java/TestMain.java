@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
@@ -10,9 +8,10 @@ public class TestMain {
     private String s;
 
     public static void main(String[] args) {
-        TestMain testMain = new TestMain();
-        char[] chars = {'1'};
-        testMain.f(chars);
+        System.out.println(Math.pow(0 , 0));
+//        TestMain testMain = new TestMain();
+//        char[] chars = {'1'};
+//        testMain.f(chars);
     }
 
     public int getA() {
@@ -46,3 +45,5 @@ public class TestMain {
         System.out.println(calendar);
     }
 }
+
+
