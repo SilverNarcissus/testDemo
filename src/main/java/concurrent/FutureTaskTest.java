@@ -1,6 +1,5 @@
 package concurrent;
 
-import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.*;
 
@@ -11,7 +10,7 @@ import java.util.concurrent.*;
 public class FutureTaskTest {
     public static void main(String[] args) {
         //
-        FutureTask<Long> futureTask = new FutureTask<Long>(new Callable<Long>() {
+        FutureTask<Long> futureTask = new FutureTask<>(new Callable<Long>() {
             @Override
             public Long call() throws Exception {
                 //do a complicated computation
