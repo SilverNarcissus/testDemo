@@ -85,7 +85,7 @@ public class SegmentTree {
         }
 
         if (node.isTag) {
-            pushDone(node, node.tag);
+            pushDown(node, node.tag);
         }
 
         return combine(internalGetRange(node.left, left, right),
@@ -98,7 +98,7 @@ public class SegmentTree {
      * @param node parent
      * @param tag  tag
      */
-    protected void pushDone(TreeNode node, int tag) {
+    protected void pushDown(TreeNode node, int tag) {
         if (node.left != null) {
             node.value = (node.left.r - node.left.l + 1) * tag;
             node.left.tag = tag;
@@ -176,7 +176,7 @@ public class SegmentTree {
         }
 
         if (node.isTag) {
-            pushDone(node, node.tag);
+            pushDown(node, node.tag);
         }
 
         innerUpdate(node.left, left, right, value);

@@ -11,15 +11,15 @@ import java.util.Stack;
 public class QuickSort implements Sort{
     public static long count = 0;
     public static void main(String[] args) {
-        Sort sort = new MergeSort();
+        Sort sort = new CountSort();
 
         Random random;
         for (int i = 0; i < 100; i++) {
             random = new Random(Calendar.getInstance().getTimeInMillis());
-            int[] nums1 = new int[100000];
-            int[] nums2 = new int[100000];
+            int[] nums1 = new int[1000000];
+            int[] nums2 = new int[1000000];
             for (int ind = 0; ind < nums1.length; ind++) {
-                final int r = random.nextInt(10000000);
+                final int r = random.nextInt(100000);
                 nums1[i] = r;
                 nums2[i] = r;
             }

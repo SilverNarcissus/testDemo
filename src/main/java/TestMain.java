@@ -1,6 +1,7 @@
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.*;
+import java.util.Collection;
+import java.util.GregorianCalendar;
+import java.util.HashSet;
+import java.util.Scanner;
 
 /**
  * Created by SilverNarcissus on 16/10/31.
@@ -11,6 +12,9 @@ public class TestMain {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
+        Father f = new Child();
+        TestMain testMain = new TestMain();
+        f.accept(testMain);
 //        System.out.println(-1 % 10);
 //        Collection<Integer> array = getCollection();
 //        System.out.println(array);
@@ -25,30 +29,24 @@ public class TestMain {
 //
 //        List<Integer> l = new ArrayList<>();
 //        l.add(1);
-//        l.add(2);
+//        l.add(2)；
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) a[i] = sc.nextInt();
 
-
-        ArrayList<Integer> arrayList = new ArrayList<>();
-
-        try {
-            ArrayList<Integer> array2 = (ArrayList) Class.forName("java.util.ArrayList").newInstance();
-            array2.getClass().getMethods();
-            Method m = array2.getClass().getMethod("add", Object.class);
-
-            m.invoke(array2, 1);
-
-            System.out.println(array2);
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
+        int[][] dp = new int[n + 1][n + 1];
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                int next = Math.max(i, j) + 1;
+                dp[i][j] = Integer.MAX_VALUE;
+                dp[i][j] = Math.min(dp[i][j], dp[next][j] + (i == 0 ? 0 : Math.abs(a[next - 1] - a[i - 1])));
+                dp[i][j] = Math.min(dp[i][j], dp[i][next] + (j == 0 ? 0 : Math.abs(a[next - 1] - a[j - 1])));
+            }
         }
+
+        System.out.println(dp[0][0]);
+
 
 //        TestMain testMain = new TestMain();
 //        char[] chars = {'1'};
@@ -56,7 +54,7 @@ public class TestMain {
     }
 
     @SuppressWarnings("TypeParameterUnusedInFormals")
-    public static <T extends Collection<Integer>> T getCollection(){
+    public static <T extends Collection<Integer>> T getCollection() {
         return (T) new HashSet<Integer>();
     }
 
@@ -87,8 +85,16 @@ public class TestMain {
     }
 
     private void f(Object o) {
-        GregorianCalendar calendar=new GregorianCalendar();
+        GregorianCalendar calendar = new GregorianCalendar();
         System.out.println(calendar);
+    }
+
+    public void visit(Father f){
+        System.out.println("father");
+    }
+
+    public void visit(Child c){
+        System.out.println("child");
     }
 }
 
