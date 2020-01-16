@@ -1,3 +1,5 @@
+package mine_sweep;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -75,7 +77,7 @@ public class Launcher {
     JLabel timelabel1;
     JLabel timelabel2;
     int time = 0;
-    Icon flagicon = new ImageIcon("flag.png");
+    Icon flagicon = new ImageIcon("flag.jpg");
     Icon mineicon = new ImageIcon("mine.png");
     Icon smileicon = new ImageIcon("smile.png");
     Timer clock = new Timer(1000, new clocklistener());
@@ -126,6 +128,7 @@ public class Launcher {
         buttonbox.add(mediumbutton);
         buttonbox.add(hardbutton);
         buttonbox.add(insanebutton);
+
         //
         JButton start = new JButton("Start!");
         start.addActionListener(new defaultstartListener());
@@ -819,6 +822,13 @@ class RecordIO {
         String line;
         String[] split = new String[2];
         File file1 = new File(type);
+        try {
+            boolean success = file1.createNewFile();
+            System.out.println(success);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(file1.getAbsolutePath());
         try {
             FileReader fr = new FileReader(file1);
             BufferedReader br = new BufferedReader(fr);

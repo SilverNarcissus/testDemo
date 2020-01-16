@@ -1,4 +1,5 @@
 package algorithm;
+import java.util.*;
 
 /**
  * Created by SilverNarcissus on 2018/3/22.
@@ -100,16 +101,25 @@ public class SegmentTree {
      */
     protected void pushDown(TreeNode node, int tag) {
         if (node.left != null) {
-            node.value = (node.left.r - node.left.l + 1) * tag;
-            node.left.tag = tag;
+            node.value = pushDownFunctions(node.left.r - node.left.l + 1, tag);
+            node.left.tag += tag;
             node.left.isTag = true;
         }
 
         if (node.right != null) {
-            node.value = (node.right.r - node.right.l + 1) * tag;
-            node.right.tag = tag;
+            node.value = pushDownFunctions(node.right.r - node.right.l + 1, tag);
+            node.right.tag += tag;
             node.right.isTag = true;
         }
+
+        node.isTag = false;
+        node.tag = 0;
+    }
+
+
+    // push down value functions
+    private int pushDownFunctions(int len, int tag) {
+        return len * tag;
     }
 
     /**
@@ -171,7 +181,7 @@ public class SegmentTree {
         if (node.l >= left && node.r <= right) {
             node.value = (node.r - node.l + 1) * value;
             node.isTag = true;
-            node.tag = value;
+            node.tag += value;
             return;
         }
 
@@ -226,5 +236,58 @@ public class SegmentTree {
             this.r = r;
             this.value = value;
         }
+    }
+
+    private List<Integer> majorityK(int[] nums, int k){
+        List<Integer> result = new ArrayList<>();
+        int[] candidate = new int[k];
+        int[] count = new int[k];
+        int loc = 0;
+
+        OUTER:
+        for(int cur : nums){
+            for(int i = 0; i < k; i++){
+                if(i == loc){
+                    candidate[i] = cur;
+                    count[i]++;
+                    loc++;
+                    continue OUTER;
+                }
+                if(candidate[i] == cur){
+                    count[i]++;
+                    continue OUTER;
+                }
+            }
+
+            // not found
+            for(int i = 0; i < k; i++){
+                if(count[i] == 0){
+                    candidate[i] = cur;
+                    count[i]++;
+                    continue OUTER;
+                }
+            }
+
+            // sub
+            for(int i = 0; i < k; i++){
+                count[i]--;
+            }
+        }
+
+        for(int i = 0; i < loc; i++){
+            int cur = candidate[i];
+            int cur_count = 0;
+            for(int num : nums){
+                if(num == cur){
+                    cur_count++;
+                }
+            }
+
+            if(cur_count > nums.length / (k + 1)){
+                result.add(cur);
+            }
+        }
+
+        return result;
     }
 }

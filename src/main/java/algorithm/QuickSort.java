@@ -16,8 +16,8 @@ public class QuickSort implements Sort{
         Random random;
         for (int i = 0; i < 100; i++) {
             random = new Random(Calendar.getInstance().getTimeInMillis());
-            int[] nums1 = new int[1000000];
-            int[] nums2 = new int[1000000];
+            int[] nums1 = new int[10000000];
+            int[] nums2 = new int[10000000];
             for (int ind = 0; ind < nums1.length; ind++) {
                 final int r = random.nextInt(100000);
                 nums1[i] = r;
@@ -43,17 +43,18 @@ public class QuickSort implements Sort{
     }
 
     public void sort(int[] nums) {
-        shuffle(nums);
-        int lo = 0;
-        int hi = nums.length - 1;
-        Stack<Integer> next = new Stack<>();
-        next.push(lo);
-        next.push(hi);
-        while (!next.isEmpty()) {
-            hi = next.pop();
-            lo = next.pop();
-            partion(nums, lo, hi, next);
-        }
+        quickSort(nums, 0, nums.length);
+//        shuffle(nums);
+//        int lo = 0;
+//        int hi = nums.length - 1;
+//        Stack<Integer> next = new Stack<>();
+//        next.push(lo);
+//        next.push(hi);
+//        while (!next.isEmpty()) {
+//            hi = next.pop();
+//            lo = next.pop();
+//            partion(nums, lo, hi, next);
+//        }
         //System.out.println(count);
     }
 
@@ -103,5 +104,33 @@ public class QuickSort implements Sort{
             final int r = random.nextInt(ind + 1);
             exchange(a, ind, r);
         }
+    }
+
+    private int partition(int[] array, int l, int r){
+        int x = array[r];
+        int i = l - 1;
+        for (int j = l; j < r - 1; j++) {
+            if(array[j] <= x){
+                i++;
+                exchange(array, i, j);
+            }
+        }
+        exchange(array, i + 1, r);
+        return i + 1;
+    }
+
+    private void quickSort(int[] array, int l, int r){
+        if(l >= r - 1){
+            return;
+        }
+        int mid = partition(array, l, r);
+        quickSort(array, l, mid - 1);
+        quickSort(array, mid + 1, r);
+    }
+
+    private void swap(int[] array, int a, int b){
+        int temp = array[a];
+        array[a] = array[b];
+        array[b] = temp;
     }
 }

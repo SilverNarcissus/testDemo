@@ -49,6 +49,7 @@ public class CacheComputable<I, V> implements Computable<I, V> {
                 future = cache.putIfAbsent(input, futureTask);
                 // if cache don't has future we compute the result
                 // or we just get the result
+                // this ensure that for any input i we compute once and only once
                 if(future == null){
                     future = futureTask;
                     futureTask.run();
@@ -61,6 +62,7 @@ public class CacheComputable<I, V> implements Computable<I, V> {
                 cache.remove(input, future);
                 e.printStackTrace();
             } catch (ExecutionException e) {
+                cache.remove(input, future);
                 throw checkException(e);
             }
         }
