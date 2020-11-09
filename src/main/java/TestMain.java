@@ -1,5 +1,10 @@
-import java.util.*;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.Collection;
+import java.util.GregorianCalendar;
+import java.util.HashSet;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Created by SilverNarcissus on 16/10/31.
@@ -10,60 +15,87 @@ public class TestMain {
   private String s;
 
   @SuppressWarnings("unchecked")
-  public static void main(String[] args) {
-//    TestMain testMain = new TestMain();
-//    Person p = new TestMain.Person();
-//    p.i = 10;
-//    testMain.does(p);
-//    System.out.println(-2 % 3);
-    List<Integer> elements = new ArrayList<>(1000000);
-    for (int i = 0; i < 1000000; i++) {
-      elements.add(i);
-    }
-    ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
-    lock.writeLock().newCondition();
-    lambdaTest(elements);
-    lambdaTest(elements);
-    lambdaTest(elements);
-    lambdaTest(elements);
-//        Father f = new Child();
-//        TestMain testMain = new TestMain();
-//        f.accept(testMain);
-//        System.out.println(-1 % 10);
-//        Collection<Integer> array = getCollection();
-//        System.out.println(array);
-//        Object[] o = new Object[12];
-//        Arrays.sort(o, new Comparator<Object>() {
-//            @Override
-//            public int compare(Object o1, Object o2) {
-//                return 0;
-//            }
-//        });
+  public static void main(String[] args) throws InterruptedException, ExecutionException {
+    ExecutorService pool = Executors.newScheduledThreadPool(1);
+    pool.submit(new Runnable() {
+      @Override
+      public void run() {
+        try {
+          while (true){
+            System.out.println("1");
+            Thread.sleep(1000);
+          }
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+      }
+    });
+
+    pool.submit(new Runnable() {
+      @Override
+      public void run() {
+        try {
+          while (true){
+            System.out.println("2");
+            Thread.sleep(1000);
+          }
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+      }
+    });
+
+    pool.shutdown();
+
+
+
+//    System.out.println("开始...");
 //
-//
-//        List<Integer> l = new ArrayList<>();
-//        l.add(1);
-//        l.add(2)；
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//        int[] a = new int[n];
-//        for (int i = 0; i < n; i++) a[i] = sc.nextInt();
-//
-//        int[][] dp = new int[n + 1][n + 1];
-//        for (int i = n - 1; i >= 0; i--) {
-//            for (int j = n - 1; j >= 0; j--) {
-//                int next = Math.max(i, j) + 1;
-//                dp[i][j] = Integer.MAX_VALUE;
-//                dp[i][j] = Math.min(dp[i][j], dp[next][j] + (i == 0 ? 0 : Math.abs(a[next - 1] - a[i - 1])));
-//                dp[i][j] = Math.min(dp[i][j], dp[i][next] + (j == 0 ? 0 : Math.abs(a[next - 1] - a[j - 1])));
-//            }
+//    CompletableFuture.supplyAsync(new Supplier<String>() {
+//      @Override
+//      public String get() {
+//        try {
+//          TimeUnit.SECONDS.sleep(1);
+//        } catch (InterruptedException e) {
+//          e.printStackTrace();
 //        }
 //
-//        System.out.println(dp[0][0]);
+//        System.out.println("返回 A");
+//        return "A";
+//      }
+//    }).applyToEitherAsync(CompletableFuture.supplyAsync(new Supplier<String>() {
+//      @Override
+//      public String get() {
+//        try {
+//          TimeUnit.SECONDS.sleep(5);
+//        } catch (InterruptedException e) {
+//          e.printStackTrace();
+//        }
+//
+//        System.out.println("返回 B");
+//        return "B";
+//      }
+//    }), new Function<String, Object>() {
+//
+//      @Override
+//      public Object apply(String s) {
+//        return s + " 最快返回";
+//      }
+//    }).whenCompleteAsync(new BiConsumer<Object, Throwable>() {
+//      @Override
+//      public void accept(Object o, Throwable throwable) {
+//        System.out.println(o.getClass());
+//        System.out.println(o.toString());
+//      }
+//    });
+//
+//
+//
+//    System.out.println("main thread");
+//    Thread.sleep(10000);
+//
 
-//        TestMain testMain = new TestMain();
-//        char[] chars = {'1'};
-//        testMain.f(chars);
+
   }
 
   public static void lambdaTest(List<Integer> elements) {

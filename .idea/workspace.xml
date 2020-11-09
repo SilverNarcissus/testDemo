@@ -2,118 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d37e3e-10d1-4e00-8a87-64b3a186913d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_java5_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bytedance/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bytedance/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bytedance/Q3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/SegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/SegmentTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mine_sweep/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mine_sweep/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myUtil/mail/MailSendUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myUtil/mail/MailSendUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/myUtil/memorizer/CacheComputable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myUtil/memorizer/CacheComputable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TestMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cobertura/cobertura.ser" beforeDir="false" afterPath="$PROJECT_DIR$/target/cobertura/cobertura.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/Edge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/HeapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/HeapSortInRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/HeapSortInRange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/DataStructure/Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/ObjectMethodOverriding/TypicalValueClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/Singleton/OddSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/Singleton/OddSingleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/Singleton/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/Singleton/Printer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/Singleton/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/Singleton/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/TestMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/TestMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/WeakMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/WeakMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/cobertura.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/cobertura.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/NameC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/StudentDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/StudentDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/hibernate/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/Annotation/RunTestForAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/Annotation/RunTestForAnnotation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/Annotation/TestAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/Annotation/TestAnnotation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/ComparatorCollection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/ComparatorCollection$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/ComparatorCollection$StringComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/ComparatorCollection$StringComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/ComparatorCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/ComparatorCollection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/EnumUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/EnumUtil$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/EnumUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/EnumUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/TwoD_Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/TwoD_Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/TypicalValueClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/myUtil/TypicalValueClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestGeneric.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestGeneric.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestMultiThread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestMultiThread$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestMultiThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/testPackage/TestMultiThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/DataStructure.Edge.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/DataStructure.Edge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/DataStructure.Graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/DataStructure.Graph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/DataStructure.HeapSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/DataStructure.HeapSort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/DataStructure.HeapSortInRange.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/DataStructure.HeapSortInRange.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/DataStructure.Vertex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/DataStructure.Vertex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/ObjectMethodOverriding.TypicalValueClass.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/Singleton.OddSingleton.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/Singleton.OddSingleton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/Singleton.Printer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/Singleton.Printer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/Singleton.Singleton.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/Singleton.Singleton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/TestMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/TestMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/WeakMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/WeakMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-packages.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-packages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-DataStructure.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-DataStructure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-ObjectMethodOverriding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-Singleton.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-Singleton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-hibernate.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-hibernate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-myUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-myUtil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-testPackage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-testPackage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary-.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-DataStructure.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary-DataStructure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-ObjectMethodOverriding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-Singleton.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary-Singleton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-hibernate.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary-hibernate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-myUtil.Annotation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary-myUtil.Annotation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-myUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary-myUtil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-testPackage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary-testPackage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/frame-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/hibernate.Main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/hibernate.Name.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/hibernate.NameC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/hibernate.Student.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/hibernate.Student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/hibernate.StudentDriver.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/hibernate.StudentDriver.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/hibernate.Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/myUtil.Annotation.RunTestForAnnotation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/myUtil.Annotation.RunTestForAnnotation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/myUtil.Annotation.TestAnnotation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/myUtil.Annotation.TestAnnotation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/myUtil.ComparatorCollection.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/myUtil.ComparatorCollection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/myUtil.EnumUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/myUtil.EnumUtil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/myUtil.TwoD_Map.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/myUtil.TwoD_Map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/myUtil.TypicalValueClass.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/myUtil.TypicalValueClass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/testPackage.TestClass.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/testPackage.TestClass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/testPackage.TestGeneric.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/testPackage.TestGeneric.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/testPackage.TestMultiThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/testPackage.TestMultiThread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/DataStructure.DummyTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/DataStructure.GraphTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/DataStructure.HeapSortInRangeTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/DataStructure.HeapSortTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ObjectMethodOverriding.TypicalValueClassTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Singleton.SingletonTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-DataStructure.DummyTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-DataStructure.GraphTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-DataStructure.HeapSortInRangeTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-DataStructure.HeapSortTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ObjectMethodOverriding.TypicalValueClassTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Singleton.SingletonTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestLOC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-myUtil.TwoD_MapTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-myUtil.TypicalValueClassTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestLOC.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/myUtil.TwoD_MapTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/myUtil.TypicalValueClassTest.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testDemo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,8 +127,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -261,7 +154,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/myUtil/rule" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.TestMain">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -411,13 +304,13 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="FloydN_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework.FloydN_3" />
+    <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bytedance.Q1" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework.*" />
+          <option name="PATTERN" value="bytedance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -425,13 +318,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mine_sweep.Launcher" />
+    <configuration name="Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bytedance.Q2" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mine_sweep.*" />
+          <option name="PATTERN" value="bytedance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -439,13 +332,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="debug.Main" />
+    <configuration name="Q3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bytedance.Q3" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="debug.*" />
+          <option name="PATTERN" value="bytedance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,13 +346,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tsinghuaParctice.Main" />
+    <configuration name="Q4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bytedance.Q4" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tsinghuaParctice.*" />
+          <option name="PATTERN" value="bytedance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -467,16 +360,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.QuickSort" />
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestMain" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -595,19 +482,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.FloydN_3" />
-      <item itemvalue="Application.QuickSort" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Launcher" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.TestMain" />
+      <item itemvalue="Application.Q1" />
+      <item itemvalue="Application.Q3" />
+      <item itemvalue="Application.Q4" />
+      <item itemvalue="Application.Q2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Launcher" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.FloydN_3" />
+        <item itemvalue="Application.TestMain" />
+        <item itemvalue="Application.Q2" />
+        <item itemvalue="Application.Q4" />
+        <item itemvalue="Application.Q3" />
+        <item itemvalue="Application.Q1" />
       </list>
     </recent_temporary>
   </component>
@@ -896,6 +783,21 @@
       <workItem from="1578537359702" duration="1591000" />
       <workItem from="1578540368577" duration="6459000" />
       <workItem from="1579139239849" duration="262000" />
+      <workItem from="1579160760301" duration="62000" />
+      <workItem from="1580953712826" duration="86000" />
+      <workItem from="1584246732754" duration="4359000" />
+      <workItem from="1585214483383" duration="1873000" />
+      <workItem from="1585314457324" duration="1100000" />
+      <workItem from="1587037344513" duration="614000" />
+      <workItem from="1595734892478" duration="422000" />
+      <workItem from="1596200740472" duration="8567000" />
+      <workItem from="1597741104809" duration="124000" />
+      <workItem from="1597741263039" duration="14000" />
+      <workItem from="1598600017044" duration="509000" />
+      <workItem from="1603763685929" duration="2250000" />
+      <workItem from="1604544253867" duration="623000" />
+      <workItem from="1604559308635" duration="405000" />
+      <workItem from="1604606818386" duration="728000" />
     </task>
     <servers />
   </component>
@@ -943,62 +845,40 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="-601" key="#debugger.expression.dialog" timestamp="1579139391941">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
+    <state x="386" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1598600111457">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="466" y="-601" key="#debugger.expression.dialog/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139391941" />
-    <state width="1878" height="375" key="GridCell.Tab.0.bottom" timestamp="1579139503266">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
+    <state x="386" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1598600111457" />
+    <state x="386" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1596252780994" />
+    <state width="1238" height="147" key="GridCell.Tab.0.bottom" timestamp="1604544697583">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503266" />
-    <state width="1238" height="148" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578557856048" />
-    <state width="1878" height="215" key="GridCell.Tab.0.bottom/0.23.1280.711/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1578558514142" />
-    <state width="1878" height="375" key="GridCell.Tab.0.center" timestamp="1579139503263">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
+    <state width="1238" height="147" key="GridCell.Tab.0.bottom/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161253" />
+    <state width="1238" height="147" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1604544697583" />
+    <state width="1238" height="147" key="GridCell.Tab.0.center" timestamp="1604544697581">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1878" height="375" key="GridCell.Tab.0.center/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503263" />
-    <state width="1238" height="148" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1578557856046" />
-    <state width="1878" height="215" key="GridCell.Tab.0.center/0.23.1280.711/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1578558514137" />
-    <state width="1878" height="375" key="GridCell.Tab.0.left" timestamp="1579139503262">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
+    <state width="1238" height="147" key="GridCell.Tab.0.center/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161248" />
+    <state width="1238" height="147" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1604544697581" />
+    <state width="1238" height="147" key="GridCell.Tab.0.left" timestamp="1604544697580">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1878" height="375" key="GridCell.Tab.0.left/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503262" />
-    <state width="1238" height="148" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1578557856045" />
-    <state width="1878" height="215" key="GridCell.Tab.0.left/0.23.1280.711/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1578558514136" />
-    <state width="1878" height="375" key="GridCell.Tab.0.right" timestamp="1579139503265">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
+    <state width="1238" height="147" key="GridCell.Tab.0.left/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161246" />
+    <state width="1238" height="147" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1604544697580" />
+    <state width="1238" height="147" key="GridCell.Tab.0.right" timestamp="1604544697582">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1878" height="375" key="GridCell.Tab.0.right/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503265" />
-    <state width="1238" height="148" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1578557856047" />
-    <state width="1878" height="215" key="GridCell.Tab.0.right/0.23.1280.711/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1578558514139" />
-    <state width="1878" height="375" key="GridCell.Tab.1.bottom" timestamp="1579139503274">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
+    <state width="1238" height="147" key="GridCell.Tab.0.right/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161251" />
+    <state width="1238" height="147" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1604544697582" />
+    <state x="149" y="23" key="SettingsEditor" timestamp="1597741231798">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503274" />
-    <state width="1878" height="375" key="GridCell.Tab.1.center" timestamp="1579139503271">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
+    <state x="149" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1597741231798" />
+    <state x="305" y="124" key="search.everywhere.popup" timestamp="1604395286773">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1878" height="375" key="GridCell.Tab.1.center/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503271" />
-    <state width="1878" height="375" key="GridCell.Tab.1.left" timestamp="1579139503268">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="375" key="GridCell.Tab.1.left/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503268" />
-    <state width="1878" height="375" key="GridCell.Tab.1.right" timestamp="1579139503272">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="375" key="GridCell.Tab.1.right/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139503272" />
-    <state x="163" y="-797" key="IDE.errors.dialog" timestamp="1578643375694">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="163" y="-797" key="IDE.errors.dialog/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1578643375694" />
-    <state x="125" y="-796" width="900" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1579139490742">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="125" y="-796" width="900" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1579139490742" />
-    <state x="240" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1578559045207">
-      <screen x="-385" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="240" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/-385.-1080.1920.1080@-385.-1080.1920.1080" timestamp="1578559045207" />
+    <state x="305" y="124" key="search.everywhere.popup/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1604395286773" />
+    <state x="305" y="124" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1596252286825" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
