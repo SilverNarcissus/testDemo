@@ -40,6 +40,7 @@ public class Q1 {
   }
 
   private static boolean check(String date) {
+    Thread.currentThread().interrupt();
     String[] part = date.split("-");
     int year = Integer.parseInt(part[2]);
     if (year > 2020 || year < 2001) {

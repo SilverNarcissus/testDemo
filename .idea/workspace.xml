@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4d37e3e-10d1-4e00-8a87-64b3a186913d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bytedance/Q1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bytedance/Q2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bytedance/Q3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructure/FenwickTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructure/FenwickTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/KMP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bytedance/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bytedance/Q1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TestMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testDemo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +107,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/SilverNarcissus/Documents/Tools/TestDemo/src/main/java/concurrent/CountDownLatchTest.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -154,7 +154,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/myUtil/rule" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestMain">
+  <component name="RunManager" selected="Application.KMP">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -304,8 +304,36 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bytedance.Q1" />
+    <configuration name="Calculater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Calculater" />
+      <module name="testDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.KMP" />
+      <module name="testDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bytedance.Q6" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -318,8 +346,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bytedance.Q2" />
+    <configuration name="Q7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bytedance.Q7" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -332,8 +360,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bytedance.Q3" />
+    <configuration name="Q8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bytedance.Q8" />
       <module name="testDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -342,28 +370,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Q4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bytedance.Q4" />
-      <module name="testDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bytedance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestMain" />
-      <module name="testDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -482,19 +488,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.TestMain" />
-      <item itemvalue="Application.Q1" />
-      <item itemvalue="Application.Q3" />
-      <item itemvalue="Application.Q4" />
-      <item itemvalue="Application.Q2" />
+      <item itemvalue="Application.Calculater" />
+      <item itemvalue="Application.Q6" />
+      <item itemvalue="Application.Q7" />
+      <item itemvalue="Application.Q8" />
+      <item itemvalue="Application.KMP" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestMain" />
-        <item itemvalue="Application.Q2" />
-        <item itemvalue="Application.Q4" />
-        <item itemvalue="Application.Q3" />
-        <item itemvalue="Application.Q1" />
+        <item itemvalue="Application.KMP" />
+        <item itemvalue="Application.Q8" />
+        <item itemvalue="Application.Q7" />
+        <item itemvalue="Application.Q6" />
+        <item itemvalue="Application.Calculater" />
       </list>
     </recent_temporary>
   </component>
@@ -797,41 +803,34 @@
       <workItem from="1603763685929" duration="2250000" />
       <workItem from="1604544253867" duration="623000" />
       <workItem from="1604559308635" duration="405000" />
-      <workItem from="1604606818386" duration="728000" />
+      <workItem from="1604606818386" duration="981000" />
+      <workItem from="1605099211045" duration="1429000" />
+      <workItem from="1605493129124" duration="4533000" />
+      <workItem from="1608861609995" duration="1137000" />
+      <workItem from="1609210800932" duration="883000" />
+      <workItem from="1609221879384" duration="11000" />
+      <workItem from="1609311529713" duration="3817000" />
+      <workItem from="1610327013574" duration="591000" />
+      <workItem from="1610415364918" duration="1645000" />
+      <workItem from="1610934693783" duration="562000" />
+      <workItem from="1610935302301" duration="596000" />
+      <workItem from="1611496848977" duration="584000" />
+      <workItem from="1611507085001" duration="275000" />
+      <workItem from="1613963512419" duration="11000" />
+      <workItem from="1614324058514" duration="4299000" />
+      <workItem from="1614482731226" duration="3305000" />
+      <workItem from="1614653384770" duration="2554000" />
+      <workItem from="1615377420085" duration="53000" />
+      <workItem from="1615377515850" duration="328000" />
+      <workItem from="1615431141838" duration="1975000" />
+      <workItem from="1616328056253" duration="6371000" />
+      <workItem from="1616395660078" duration="14000" />
+      <workItem from="1616568318015" duration="150000" />
+      <workItem from="1616583654835" duration="340000" />
+      <workItem from="1617017549534" duration="3460000" />
+      <workItem from="1617850589254" duration="533000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="Substitution_ESTest_test09 - 2018.07.08 at 10h 54m 18s.xml">
-      <configuration name="Substitution_ESTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Substitution_ESTest_test09 - 2018.07.08 at 10h 55m 21s.xml">
-      <configuration name="Substitution_ESTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Substitution_ESTest_test09 - 2018.07.08 at 10h 55m 50s.xml">
-      <configuration name="Substitution_ESTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Substitution_ESTest_test09 - 2018.07.08 at 10h 56m 54s.xml">
-      <configuration name="Substitution_ESTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Substitution_ESTest_test09 - 2018.07.08 at 10h 57m 16s.xml">
-      <configuration name="Substitution_ESTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Substitution_ESTest_test09 - 2018.07.08 at 11h 03m 30s.xml">
-      <configuration name="Substitution_ESTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Substitution_ESTest_test09 - 2018.07.08 at 11h 04m 47s.xml">
-      <configuration name="Substitution_ESTest.test09" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myUtil_rule_in_testDemo - 2018.07.08 at 10h 57m 54s.xml">
-      <configuration name="myUtil.rule in testDemo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myUtil_rule_in_testDemo - 2018.07.08 at 11h 03m 25s.xml">
-      <configuration name="myUtil.rule in testDemo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="myUtil_rule_in_testDemo - 2018.07.08 at 11h 04m 59s.xml">
-      <configuration name="myUtil.rule in testDemo" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -845,40 +844,84 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="386" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1598600111457">
+    <state x="386" y="86" key="#com.intellij.ide.util.MemberChooser" timestamp="1614482807377">
+      <screen x="0" y="23" width="1280" height="707" />
+    </state>
+    <state x="386" y="86" key="#com.intellij.ide.util.MemberChooser/0.23.1280.707@0.23.1280.707" timestamp="1614482807377" />
+    <state width="1238" height="213" key="GridCell.Tab.0.bottom" timestamp="1617160108323">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="386" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1598600111457" />
-    <state x="386" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1596252780994" />
-    <state width="1238" height="147" key="GridCell.Tab.0.bottom" timestamp="1604544697583">
+    <state width="1238" height="214" key="GridCell.Tab.0.bottom/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1610695849401" />
+    <state width="1238" height="213" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1617160108323" />
+    <state width="1238" height="214" key="GridCell.Tab.0.bottom/0.23.1280.707/-385.-1080.1920.1080@0.23.1280.707" timestamp="1609221834690" />
+    <state width="1238" height="213" key="GridCell.Tab.0.bottom/0.23.1280.707@0.23.1280.707" timestamp="1616331994660" />
+    <state width="1238" height="213" key="GridCell.Tab.0.center" timestamp="1617160108321">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.bottom/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161253" />
-    <state width="1238" height="147" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1604544697583" />
-    <state width="1238" height="147" key="GridCell.Tab.0.center" timestamp="1604544697581">
+    <state width="1238" height="214" key="GridCell.Tab.0.center/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1610695849396" />
+    <state width="1238" height="213" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1617160108321" />
+    <state width="1238" height="214" key="GridCell.Tab.0.center/0.23.1280.707/-385.-1080.1920.1080@0.23.1280.707" timestamp="1609221834683" />
+    <state width="1238" height="213" key="GridCell.Tab.0.center/0.23.1280.707@0.23.1280.707" timestamp="1616331994651" />
+    <state width="1238" height="213" key="GridCell.Tab.0.left" timestamp="1617160108320">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.center/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161248" />
-    <state width="1238" height="147" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1604544697581" />
-    <state width="1238" height="147" key="GridCell.Tab.0.left" timestamp="1604544697580">
+    <state width="1238" height="214" key="GridCell.Tab.0.left/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1610695849391" />
+    <state width="1238" height="213" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1617160108320" />
+    <state width="1238" height="214" key="GridCell.Tab.0.left/0.23.1280.707/-385.-1080.1920.1080@0.23.1280.707" timestamp="1609221834682" />
+    <state width="1238" height="213" key="GridCell.Tab.0.left/0.23.1280.707@0.23.1280.707" timestamp="1616331994648" />
+    <state width="1238" height="213" key="GridCell.Tab.0.right" timestamp="1617160108322">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.left/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161246" />
-    <state width="1238" height="147" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1604544697580" />
-    <state width="1238" height="147" key="GridCell.Tab.0.right" timestamp="1604544697582">
+    <state width="1238" height="214" key="GridCell.Tab.0.right/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1610695849399" />
+    <state width="1238" height="213" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1617160108322" />
+    <state width="1238" height="214" key="GridCell.Tab.0.right/0.23.1280.707/-385.-1080.1920.1080@0.23.1280.707" timestamp="1609221834685" />
+    <state width="1238" height="213" key="GridCell.Tab.0.right/0.23.1280.707@0.23.1280.707" timestamp="1616331994653" />
+    <state width="1238" height="216" key="GridCell.Tab.1.bottom" timestamp="1614414633695">
+      <screen x="0" y="23" width="1280" height="707" />
+    </state>
+    <state width="1238" height="216" key="GridCell.Tab.1.bottom/0.23.1280.707@0.23.1280.707" timestamp="1614414633695" />
+    <state width="1238" height="216" key="GridCell.Tab.1.center" timestamp="1614414633690">
+      <screen x="0" y="23" width="1280" height="707" />
+    </state>
+    <state width="1238" height="216" key="GridCell.Tab.1.center/0.23.1280.707@0.23.1280.707" timestamp="1614414633690" />
+    <state width="1238" height="216" key="GridCell.Tab.1.left" timestamp="1614414633690">
+      <screen x="0" y="23" width="1280" height="707" />
+    </state>
+    <state width="1238" height="216" key="GridCell.Tab.1.left/0.23.1280.707@0.23.1280.707" timestamp="1614414633690" />
+    <state width="1238" height="216" key="GridCell.Tab.1.right" timestamp="1614414633692">
+      <screen x="0" y="23" width="1280" height="707" />
+    </state>
+    <state width="1238" height="216" key="GridCell.Tab.1.right/0.23.1280.707@0.23.1280.707" timestamp="1614414633692" />
+    <state width="1280" height="800" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1609311992627">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="147" key="GridCell.Tab.0.right/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1603764161251" />
-    <state width="1238" height="147" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1604544697582" />
-    <state x="149" y="23" key="SettingsEditor" timestamp="1597741231798">
+    <state width="1280" height="800" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1609311992627" />
+    <state x="305" y="124" width="670" height="677" key="search.everywhere.popup" timestamp="1616375672121">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="149" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1597741231798" />
-    <state x="305" y="124" key="search.everywhere.popup" timestamp="1604395286773">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="305" y="124" key="search.everywhere.popup/0.0.1280.800/-385.-1080.1920.1080@0.0.1280.800" timestamp="1604395286773" />
-    <state x="305" y="124" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1596252286825" />
+    <state x="305" y="124" width="670" height="677" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1616375672121" />
+    <state x="305" y="133" width="670" height="599" key="search.everywhere.popup/0.23.1280.707@0.23.1280.707" timestamp="1615377458575" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/algorithm/HappyGrid.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/microsoft/Problem3.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/microsoft/Problem3.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

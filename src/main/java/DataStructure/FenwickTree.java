@@ -1,6 +1,19 @@
 package DataStructure;
 
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
 public class FenwickTree {
+
+  public static void main(String[] args) {
+    Map<String, List<String>> s = new LinkedHashMap<>();
+    s.put("213", null);
+    s.put(null, new LinkedList<>());
+    System.out.println(s);
+  }
+
   int[] array;
   int size;
 

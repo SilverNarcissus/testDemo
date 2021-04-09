@@ -1,53 +1,68 @@
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * Created by SilverNarcissus on 16/10/31.
  */
 public class TestMain {
 
-  private int a;
+  private static int a;
   private String s;
+  private int[] array;
+  int b;
+
 
   @SuppressWarnings("unchecked")
   public static void main(String[] args) throws InterruptedException, ExecutionException {
-    ExecutorService pool = Executors.newScheduledThreadPool(1);
-    pool.submit(new Runnable() {
-      @Override
-      public void run() {
-        try {
-          while (true){
-            System.out.println("1");
-            Thread.sleep(1000);
-          }
-        } catch (InterruptedException e) {
-          e.printStackTrace();
-        }
-      }
-    });
+    a = 0;
+    Object lock = new Object();
 
-    pool.submit(new Runnable() {
-      @Override
-      public void run() {
-        try {
-          while (true){
-            System.out.println("2");
-            Thread.sleep(1000);
-          }
-        } catch (InterruptedException e) {
-          e.printStackTrace();
-        }
-      }
-    });
+    TestMain main = new TestMain();
+    main.array = new int[10];
 
-    pool.shutdown();
+    System.out.println(main.getVal());
+    System.out.println(main.getVal2());
+//    ExecutorService pool = Executors.newScheduledThreadPool(10);
+//    for (int i = 0; i < 10; i++) {
+//      pool.submit(new Runnable() {
+//        @Override
+//        public void run() {
+//          for (int i = 0; i < 10000; i++) {
+//            increase(lock);
+//          }
+//        }
+//      });
+//    }
 
 
+//    Thread another = new Thread(() -> {
+//      synchronized (lock) {
+//        while (true) {
+//          System.out.println("here");
+//
+//          try {
+//            lock.wait(1000);
+//          } catch (InterruptedException e) {
+//            Thread.currentThread().interrupt();
+//          }
+//        }
+//
+//      }
+//    });
+//
+//    another.start();
+//    another.interrupt();
+//
+//    Thread.sleep(1000000);
+
+//    Thread.sleep(5000);
+//    System.out.println(a);
+//    Thread.sleep(5000);
+//    System.out.println(a);
 
 //    System.out.println("开始...");
 //
@@ -94,8 +109,41 @@ public class TestMain {
 //    System.out.println("main thread");
 //    Thread.sleep(10000);
 //
+    main.increase(lock);
+    main.increase2(lock);
+    main.increase3();
+  }
+
+  private int change(){
+    array = new int[5];
+    Arrays.fill(array, 1);
+    return 2;
+  }
+
+  private int getVal(){
+    return array[change()];
+  }
+
+  private int getVal2(){
+    int index = change();
+    return array[index];
+  }
 
 
+  public void increase(Object o) {
+    synchronized (o) {
+      b = b + 1;
+    }
+  }
+
+  public void increase2(Object o) {
+    b = b + 1;
+  }
+
+  public synchronized void increase3() {
+    synchronized (this) {
+      b = b + 1;
+    }
   }
 
   public static void lambdaTest(List<Integer> elements) {

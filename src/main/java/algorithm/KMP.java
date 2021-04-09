@@ -1,5 +1,6 @@
 package algorithm;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -7,13 +8,14 @@ import java.util.Random;
  */
 public class KMP {
     public static void main(String[] args) {
-        KMP kmp = new KMP();
+
         //System.out.println(kmp.KMP("eeecdecabaaeadaebcbbcbaceddaabddecddceceadddbdabeeddcdaeabccaaebebadecaadbecebdbeacaaedcbcccaeccedde", "ebbcd"));
         for (int i = 0; i < 1000; i++) {
-            String s = kmp.buildRandomString(100);
-            String pattern = kmp.buildRandomString(5);
+            String s = KMP.buildRandomString(100);
+            String pattern = KMP.buildRandomString(5);
+            KMP kmp = new KMP(pattern);
             //System.out.println(s + " " + pattern);
-            if(kmp.KMP(s, pattern) != s.indexOf(pattern)){
+            if(kmp.getIndex(s) != s.indexOf(pattern)){
                 System.out.println(s + " " + pattern);
             }
             //System.out.println(kmp.KMP(s, pattern));
@@ -21,7 +23,7 @@ public class KMP {
 
     }
 
-    private String buildRandomString(int n){
+    private static String buildRandomString(int n){
         Random r = new Random();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
@@ -31,43 +33,39 @@ public class KMP {
         return sb.toString();
     }
 
-    public int KMP(String s, String pattern){
-        int[] next = getNext(pattern);
-        //System.out.println(Arrays.toString(next));
-        int loc = 0;
-        int i = 0;
-        while(i < s.length()){
-            //System.out.println(i + " " + loc);
-            if(loc == pattern.length()){
-                return i - loc;
-            }
+    private final int[] next;
+    private final String pattern;
 
-            if(loc == -1 || s.charAt(i) == pattern.charAt(loc)){
-                loc++;
-                i++;
+    public KMP(String pattern) {
+        this.pattern = pattern;
+        int n = pattern.length();
+        next = new int[n];
+        Arrays.fill(next, -1);
+        int j = -1;
+        for (int i = 1; i < n; i++) {
+            while (j != -1 && pattern.charAt(j + 1) != pattern.charAt(i)) {
+                j = next[j];
             }
-            else{
-                loc = next[loc];
+            if (pattern.charAt(j + 1) == pattern.charAt(i)) {
+                j = j + 1;
             }
+            next[i] = j;
         }
-
-        return loc == pattern.length() ? s.length() - loc : -1;
     }
 
-    private int[] getNext(String s){
-        int[] result = new int[s.length() + 1];
-        result[0] = -1;
-        int i = 0;
+    public int getIndex(String query) {
         int j = -1;
-        while(i < s.length()){
-            if(j == -1 || s.charAt(i) == s.charAt(j)){
-                result[++i] = ++j;
+        for (int i = 0; i < query.length(); i++) {
+            while (j != -1 && query.charAt(i) != pattern.charAt(j + 1)) {
+                j = next[j];
             }
-            else {
-                j = result[j];
+            if (query.charAt(i) == pattern.charAt(j + 1)) {
+                j++;
+            }
+            if (j == pattern.length() - 1) {
+                return i - pattern.length() + 1;
             }
         }
-
-        return result;
+        return -1;
     }
 }
