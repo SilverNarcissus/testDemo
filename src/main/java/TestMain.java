@@ -11,10 +11,9 @@ import java.util.concurrent.ExecutionException;
 public class TestMain {
 
   private static int a;
+  int b;
   private String s;
   private int[] array;
-  int b;
-
 
   @SuppressWarnings("unchecked")
   public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -26,6 +25,7 @@ public class TestMain {
 
     System.out.println(main.getVal());
     System.out.println(main.getVal2());
+    main.add(10);
 //    ExecutorService pool = Executors.newScheduledThreadPool(10);
 //    for (int i = 0; i < 10; i++) {
 //      pool.submit(new Runnable() {
@@ -37,7 +37,6 @@ public class TestMain {
 //        }
 //      });
 //    }
-
 
 //    Thread another = new Thread(() -> {
 //      synchronized (lock) {
@@ -114,38 +113,6 @@ public class TestMain {
     main.increase3();
   }
 
-  private int change(){
-    array = new int[5];
-    Arrays.fill(array, 1);
-    return 2;
-  }
-
-  private int getVal(){
-    return array[change()];
-  }
-
-  private int getVal2(){
-    int index = change();
-    return array[index];
-  }
-
-
-  public void increase(Object o) {
-    synchronized (o) {
-      b = b + 1;
-    }
-  }
-
-  public void increase2(Object o) {
-    b = b + 1;
-  }
-
-  public synchronized void increase3() {
-    synchronized (this) {
-      b = b + 1;
-    }
-  }
-
   public static void lambdaTest(List<Integer> elements) {
     long time = System.nanoTime();
     int res = elements.stream().map(x -> x + 1).reduce((x, y) -> x + y).get();
@@ -158,8 +125,73 @@ public class TestMain {
     return (T) new HashSet<Integer>();
   }
 
-  public int getA() {
-    return a;
+  private int change() {
+    array = new int[5];
+    Arrays.fill(array, 1);
+    return 2;
+  }
+
+  private int getVal() {
+    return array[change()];
+  }
+
+  private int getVal2() {
+    int index = change();
+    return array[index];
+  }
+
+  public void increase(Object o) {
+    synchronized (o) {
+      b = b + 1;
+    }
+  }
+
+  public void increase2(Object o) {
+    b = b + 1;
+  }
+
+  public int add(int res) {
+    switch (res) {
+      case 1:
+        res++;
+        break;
+      case 2:
+        res += 2;
+        break;
+      case 3:
+        res += 3;
+        break;
+      default:
+        res--;
+    }
+
+    return res;
+  }
+
+  public synchronized void increase3() {
+    synchronized (this) {
+      b = b + 1;
+    }
+  }
+
+  public int getA(String res) {
+    int out = 0;
+
+    switch (res) {
+      case "33":
+        out++;
+        break;
+      case "22":
+        out += 2;
+        break;
+      case "11":
+        out += 3;
+        break;
+      default:
+        out--;
+    }
+
+    return out;
   }
 
   public void setA(int a) {

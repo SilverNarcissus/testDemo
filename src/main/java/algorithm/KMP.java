@@ -1,7 +1,6 @@
 package algorithm;
 
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by SilverNarcissus on 2019/3/28.
@@ -21,7 +20,12 @@ public class KMP {
             //System.out.println(kmp.KMP(s, pattern));
         }
 
+//        KMP kmp = new KMP("aa");
+//        System.out.println(kmp.getIndex("aabaaabaaac"));
+//        System.out.println(kmp.res);
     }
+
+    List<Integer> res = new ArrayList<>();
 
     private static String buildRandomString(int n){
         Random r = new Random();
@@ -54,6 +58,7 @@ public class KMP {
     }
 
     public int getIndex(String query) {
+
         int j = -1;
         for (int i = 0; i < query.length(); i++) {
             while (j != -1 && query.charAt(i) != pattern.charAt(j + 1)) {
@@ -63,9 +68,10 @@ public class KMP {
                 j++;
             }
             if (j == pattern.length() - 1) {
-                return i - pattern.length() + 1;
+                res.add(i - pattern.length() + 1);
+                j = next[j];
             }
         }
-        return -1;
+        return res.isEmpty() ? -1 : res.get(0);
     }
 }
