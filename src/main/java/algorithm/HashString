@@ -1,7 +1,7 @@
 class HashString {
     long[] P;
     long[] H;
-    long MOD = (long)(1e9 + 277), BASE = 233 + 27;
+    long MOD = (long)(1e8 + 23777), BASE = 233 + 27;
 
     public HashString(String s) {
         int n = s.length();
@@ -10,7 +10,7 @@ class HashString {
         for (int i = 1; i <= n; i++) P[i] = P[i - 1] * BASE % MOD;
         H = new long[n + 1];
         H[0] = 0;
-        for (int i = 1; i <= n; i++) H[i] = (H[i - 1] * BASE + (s.charAt(i - 1) - 'a')) % MOD;
+        for (int i = 1; i <= n; i++) H[i] = (H[i - 1] * BASE + (s.charAt(i - 1))) % MOD;
     }
 
     public long query(int l, int r) {
