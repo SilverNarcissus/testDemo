@@ -1,0 +1,138 @@
+class Solution {
+    private Node root;
+    int k;
+    
+    public int[] resultArray(int[] nums, int k, int[][] queries) {
+        this.k = k;
+        root = build(nums);
+        //printTree(root);
+        
+        int m = queries.length;
+        int n = nums.length;
+        int[] res = new int[m];
+
+        for(int i = 0; i < m; i++){
+            modify(queries[i][0], queries[i][1] % k, root);
+            //printTree(root);
+            Node cur = query(queries[i][2], n - 1, root);
+            res[i] = cur.count[queries[i][3]];
+        }
+
+
+        return res;
+    }
+
+    private Node build(int[] arr){
+        Queue<Node> queue = new ArrayDeque<>();
+        int n = arr.length;
+        
+        for(int i = 0; i < n; i++){
+            queue.add(new Node(i, i, k, arr[i] % k));
+        }
+
+        while(queue.size() > 1){
+            int size = queue.size();
+            for(int i = 0; i < size; i += 2){
+                if(i == size - 1){
+                    queue.add(queue.poll());
+                }
+                else{
+                    queue.add(merge(queue.poll(), queue.poll()));
+                }
+            }
+        }
+
+        return queue.poll();
+    }
+
+    private Node merge(Node n1, Node n2){
+        int v = (n1.v * n2.v) % k;
+        int[] count = new int[k];
+        for(int i = 0; i < k; i++){
+            count[i] = n1.count[i];
+        }
+
+        for(int i = 0; i < k; i++){
+            count[(i * n1.v) % k] += n2.count[i];
+        }
+
+        Node res = new Node(n1.l, n2.r, k, v);
+        res.count = count;
+        res.left = n1;
+        res.right = n2;
+
+        return res;
+    }
+
+    private void modify(int loc, int val, Node cur){
+        //System.out.println(loc + " " + cur.l + " " + cur.r);
+        
+        if(cur.l == cur.r && cur.l == loc){
+            cur.count[cur.v] = 0;
+            cur.v = val;
+            cur.count[val] = 1;
+            return;
+        }
+
+        if(loc <= cur.left.r){
+            modify(loc, val, cur.left);
+        }
+        else{
+            modify(loc, val, cur.right);
+        }
+
+        Node newNode = merge(cur.left, cur.right);
+        cur.v = newNode.v;
+        cur.count = newNode.count;
+    }
+
+    private Node query(int l, int r, Node cur){
+        if(cur.l >= l && cur.r <= r){
+            return cur;
+        }
+
+        Node res = null;
+        if(l <= cur.left.r){
+            res = query(l, r, cur.left);
+        }
+
+        if(r >= cur.right.l){
+            Node next = query(l, r, cur.right);
+            if(res == null){
+                res = next;
+            }
+            else{
+                res = merge(res, next);
+            }
+        }
+
+        return res;
+    }
+
+    private void printTree(Node cur){
+        if(cur == null){
+            return;
+        }
+
+        System.out.println("[" + cur.l + ", " + cur.r + "] v = " + cur.v + " count= " + Arrays.toString(cur.count));
+        printTree(cur.left);
+        printTree(cur.right);
+    }
+
+    class Node {
+        Node left;
+        Node right;
+        int l;
+        int r;
+        int v;
+        int[] count;
+        
+        public Node(int l, int r, int k, int v) {
+            this.l = l;
+            this.r = r;
+            count = new int[k];
+            this.v = v;
+            count[v] = 1;
+        }
+    }
+}
